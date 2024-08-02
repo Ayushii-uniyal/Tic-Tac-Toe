@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(156, 201, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+}
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    height: 100px;
+    align-items: center;
+}
+
+.main{
+    display: grid;
+    margin:50px;
+    grid-template-columns: 110px 110px 110px;
+    grid-template-rows: 110px 110px 110px;
+    justify-content: center;
+    grid-gap: 5px;
+}
+.main > button{
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 50px;
+    background-color: rgb(255, 255, 151);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+    font-weight: bold;
+    transition: opacity 0.01s;
+}
+
+.main > button:active{
+    opacity: 0.8;
+}
+
+.reset , .new{
+    background-color: rgb(44, 110, 73);
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    transition: background-color 0.1s, opacity 0.1s, border-width 0.1s;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.reset:hover , .new:hover{
+    background-color: rgb(44, 110, 73, 0.1);
+    border-width: 2px;
+}
+
+.reset:active , .new:active{
+    opacity: 0.5;
+}
+
+.output{
+    height: 18px;
+    color: rgb(245, 64, 64);
+    font-size: 30px;
+    font-weight: bold;
+    font-style:oblique;
+    text-decoration: underline;
+}
+
+.middle{
+    display: flex;
+    width: 750px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.p1{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.p21, .p22{
+    height: 25px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.p21{
+    background-color: rgba(44, 110, 73, 0.3);
+    color: #16492c;
+}
+
+.p22{
+    background-color: rgb(255, 0, 0, 0.3);
+    color: red;
+}
+
+.p21:active , .p22:active{
+    border: 1px solid black;
+}
+
+.ok{
+    margin-top: 10px;
+    width: 38px;
+    height: 25px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px black;
+    transition: opacity 0.05s;
+}
+
+.ok:active{
+    opacity: 0.5;
+}
